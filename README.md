@@ -71,7 +71,7 @@ An example sketch is available that shows how to use the library. You can access
   The last values read from the gyro.
 
 * `uint8_t last_status`<br>
-  The status of the last I&sup2;C write transmission. See the [`Wire.endTransmission()` documentation](http://arduino.cc/en/Reference/WireEndTransmission) for return values.
+  The status of the last I&sup2;C write transmission. See the [`twMaster.endTransmission()` documentation](http://arduino.cc/en/Reference/WireEndTransmission) for return values.
 
 * `LSM6(void)`<br>
   Constructor.

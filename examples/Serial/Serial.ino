@@ -14,7 +14,7 @@ significant bit) at this FS setting, so the raw reading of
 16276 corresponds to 16276 * 0.061 = 992.8 mg = 0.9928 g.
 */
 
-#include <Wire.h>
+#include <TwoWire.h>
 #include <LSM6.h>
 
 LSM6 imu;
@@ -24,7 +24,7 @@ char report[80];
 void setup()
 {
   Serial.begin(9600);
-  Wire.begin();
+  twMaster.begin();
 
   if (!imu.init())
   {
